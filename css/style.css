@@ -16,7 +16,11 @@ body {
 header {
 	height:139px;
 	width: 100%;
-	background: black url('../img/headerBg.png') repeat-x;
+	background: black url('../img/headerBg.png') repeat-x left;
+	position: relative;
+	/*background-image:url('../img/headerBg.png'), url('../img/headerGlow.png');
+	background-repeat: repeat-x, no-repeat;
+	background-position: left, center;*/
 }
 header h1,header h4 {
 	text-indent:-9999px;
@@ -26,7 +30,7 @@ header h1 {
 	background: url('../img/generalSprite.png') no-repeat 0 0;
 	width: 420px;
 	height: 36px;
-	margin-top:40px;
+	/*margin-top:40px;*/
 	margin-bottom:10px;
 }
 header h4 {
@@ -34,4 +38,12 @@ header h4 {
 	width: 421px;
 	height: 9px;
 }
+.headerGlow {
+	background: url('../img/headerGlow.png') no-repeat;
+	position: absolute;
+	bottom: 0px;
+	width: 1355px;
+	height: 141px;
+}
+
 
