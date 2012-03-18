@@ -1,8 +1,37 @@
+@import url("reset.css");
+
 body {
 	font-family: Arial, Helvetica, sans-serif;
+	background: #a4a9b3 url('../img/bg.png') repeat-y center;
 }
 .wrap {
-	width: 600px;
-	margin: auto;
+	/*width: 930px;*/
+	margin: 0 auto;
+}
+/*
+************************
+* =header
+************************
+*/
+header {
+	height:139px;
+	width: 100%;
+	background: black url('../img/headerBg.png') repeat-x;
+}
+header h1,header h4 {
+	text-indent:-9999px;
+	margin: 0 auto;
+}
+header h1 {
+	background: url('../img/generalSprite.png') no-repeat 0 0;
+	width: 420px;
+	height: 36px;
+	margin-top:40px;
+	margin-bottom:10px;
+}
+header h4 {
+	background: url('../img/generalSprite.png') no-repeat 0 -44px;
+	width: 421px;
+	height: 9px;
 }
 
