@@ -27,14 +27,14 @@ header h1,header h4 {
 	margin: 0 auto;
 }
 header h1 {
-	background: url('../img/generalSprite.png') no-repeat 0 0;
+	background: url('../img/logo.png') no-repeat;
 	width: 420px;
 	height: 36px;
 	/*margin-top:40px;*/
 	margin-bottom:10px;
 }
 header h4 {
-	background: url('../img/generalSprite.png') no-repeat 0 -44px;
+	background: url('../img/insparationLogo.png') no-repeat;
 	width: 421px;
 	height: 9px;
 }
