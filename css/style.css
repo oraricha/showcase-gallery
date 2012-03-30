@@ -18,9 +18,9 @@ header {
 	width: 100%;
 	background: black url('../img/headerBg.png') repeat-x left;
 	position: relative;
-	/*background-image:url('../img/headerBg.png'), url('../img/headerGlow.png');
-	background-repeat: repeat-x, no-repeat;
-	background-position: left, center;*/
+}
+header>div {
+	padding-top:43px;
 }
 header h1,header h4 {
 	text-indent:-9999px;
@@ -41,9 +41,68 @@ header h4 {
 .headerGlow {
 	background: url('../img/headerGlow.png') no-repeat;
 	position: absolute;
-	bottom: 0px;
+	top: -1px;
 	width: 1355px;
 	height: 141px;
 }
+/*
+************************
+* =mainNav
+************************
+*/
+.navWrapper{
+	margin: 0 auto;
+	height:38px;
+	width:930px;
+	padding-top: 5px;
+}
+.wrap > nav {
+	background: url('../img/navBg.png') repeat-x;
+	height:38px;
+}
+/*
+************************
+* =scaleBar
+************************
+*/
+.scaleBar {
+	background: url('../img/navItemBg.png') repeat-x  0 0;
+	width:173px;
+	height:27px;
+	float: left;
+	margin-right:151px;
+	/*background: #DDD url() repeat/repeat-x/repeat-y/no-repeat scroll/fixed top left/top center/top right/center left/center center/center right/bottom left/bottom center/bottom right/x-% y-%/x-pos y-pos;*/
+}
+.scaleBar > div {
+	float: left;
+	display: inline;
+	vertical-align: middle;
+	margin-top: 2px;
+}
+.scaleBar > div:first-of-type  {
+	background: url('../img/blackBtnSprite.png') no-repeat 0 0;
+	width: 157px;
+	height: 23px;
+	margin-left: 2px;
+}
+.scaleBar > div:last-of-type {
+	background: url('../img/blackBtnSprite.png') no-repeat -161px 0;
+	width: 12px;
+	height: 23px;
+}
+.pin {
+	background: url('../img/generalSprite.png') no-repeat -397px -64px;
+	width: 16px;
+	height: 16px;
+}
 
-
+#mainNav li {
+	display:inline;
+	float: left;
+}
+.bar {
+	background: url('../img/generalSprite.png') no-repeat -299px -90px;
+	width: 121px;
+	height: 9px;
+	margin: 7px 25px;
+}

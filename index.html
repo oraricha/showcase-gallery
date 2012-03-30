@@ -5,6 +5,7 @@
 	<link rel="stylesheet"  href="css/style.css" />
 	<body>
 		<div class="wrap">
+			<div class="headerGlow"></div>
 			<header>
 				<div>
 					<hgroup>
@@ -12,22 +13,27 @@
 						<h4>Inspiration for the modern web designer</h4>
 					</hgroup>
 				</div>
-				<div class="headerGlow"></div>
 			</header>
-			<nav>
-				<div class="scaleBar">
-					<a href="#" class="minus"></a>
-					<a href="#" class="pin"></a>
-					<a href="#" class="plus"></a>
+			<nav id="mainNav">
+				<div class="navWrapper">
+					<div class="scaleBar">
+						<div class="blackBtn">
+							<a href="#" class="minus"></a>
+							<div class="bar"></div>
+							<a href="#" class="pin"></a>
+							<a href="#" class="plus"></a>
+						</div>
+						<div class="blackBtnEnd"></div>
+					</div>
+					<nav>
+						<ul>
+							<li><a href="#">Gallery</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+						<div class="searchForm"><input type="search"></div>
+					</nav>
 				</div>
-				<nav>
-					<ul>
-						<li><a href="#">Gallery</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-					<div class="searchForm"><input type="search"></div>
-				</nav>
 			</nav>
 			<div class="contentWrap">
 				<section class="ads">
