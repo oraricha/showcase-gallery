@@ -10,6 +10,15 @@ body {
 }
 /*
 ************************
+* =general
+************************
+*/
+a{
+	text-decoration:none;
+	color: #FFF;
+}
+/*
+************************
 * =header
 ************************
 */
@@ -84,25 +93,73 @@ header h4 {
 	width: 157px;
 	height: 23px;
 	margin-left: 2px;
+	position: relative;
 }
 .scaleBar > div:last-of-type {
 	background: url('../img/blackBtnSprite.png') no-repeat -161px 0;
 	width: 12px;
 	height: 23px;
 }
+.pin, .plus, .minus {
+	position: absolute;
+}
 .pin {
 	background: url('../img/generalSprite.png') no-repeat -397px -64px;
 	width: 16px;
 	height: 16px;
+	text-indent:-9999px;
+	margin:-3px 50px;
 }
+.minus {
+	background: url('../img/generalSprite.png') no-repeat -415px -64px;
+	width: 9px;
+	height: 3px;
+	text-indent:-9999px;
+	top:11px;
+	left: 10px;
 
-#mainNav li {
-	display:inline;
-	float: left;
+}
+.plus {
+	background: url('../img/generalSprite.png') no-repeat -415px -71px;
+	width: 9px;
+	height: 9px;
+	top:8px;
+	right: -3px;
 }
 .bar {
 	background: url('../img/generalSprite.png') no-repeat -299px -90px;
 	width: 121px;
 	height: 9px;
 	margin: 7px 25px;
+	cursor: pointer;
+}
+/*
+************************
+* =nav buttons top
+************************
+*/
+#mainNav nav {
+	overflow: hidden;
+}
+#mainNav nav>div {
+	overflow: hidden;
+	background: url('../img/generalSprite.png') no-repeat -447px -41px;
+	width: 143px;
+	height: 23px;
+}
+#mainNav ul {
+	line-height: 23px;
+	font-size: 11px;
+	font-family:Myriad Pro;
+}
+#mainNav ul li {
+	display:inline;
+	float: left;
+	background: url('../img/blackBtnSprite3.png') repeat-x -16px 0px;
+	margin-right:4px;
+	/*padding-left: 0px;*/
+}
+#mainNav ul li a {
+	background: url('../img//blackBtnSprite3.png') no-repeat 37px 0px;
+	padding:5px 8px;
 }
