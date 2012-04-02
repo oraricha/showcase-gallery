@@ -69,19 +69,23 @@ header h4 {
 	background: url('../img/navBg.png') repeat-x;
 	height:38px;
 }
+.scaleBar, #mainNav nav > div {
+	margin-right:151px;
+}
+#mainNav nav div:last-child {
+	margin-right:0px;
+}
 /*
 ************************
 * =scaleBar
 ************************
 */
 .scaleBar {
-	background: url('../img/navItemBg.png') repeat-x  0 0;
+	background: url('../img/navItemBg.png') no-repeat  0 0;
 	width:173px;
 	height:27px;
 	float: left;
-	margin-right:151px;
-	/*background: #DDD url() repeat/repeat-x/repeat-y/no-repeat scroll/fixed top left/top center/top right/center left/center center/center right/bottom left/bottom center/bottom right/x-% y-%/x-pos y-pos;*/
-}
+	}
 .scaleBar > div {
 	float: left;
 	display: inline;
@@ -140,26 +144,64 @@ header h4 {
 */
 #mainNav nav {
 	overflow: hidden;
+	/*margin-right: */
 }
-#mainNav nav>div {
+#mainNav nav>div{
 	overflow: hidden;
-	background: url('../img/generalSprite.png') no-repeat -447px -41px;
-	width: 143px;
-	height: 23px;
+	background: url('../img/navItemBg.png') no-repeat  0 0;
+	width:173px;
+	height:27px;
+	float:left;
 }
 #mainNav ul {
 	line-height: 23px;
 	font-size: 11px;
-	font-family:Myriad Pro;
+	font-family: Myriad Pro;
+	margin-top: 2px;
+	margin-left: 6px;
+	float:left;
+	/*background-image: url('../img/generalSprite.png') no-repeat -447px -41px;
+	width: 143px;
+	height: 23px;*/
 }
 #mainNav ul li {
 	display:inline;
 	float: left;
 	background: url('../img/blackBtnSprite3.png') repeat-x -16px 0px;
 	margin-right:4px;
-	/*padding-left: 0px;*/
+	padding-left: 2px;
+}
+#mainNav ul li:hover {
+	background: url('../img/blackBtnSprite3.png') repeat-x -16px -24px;
 }
 #mainNav ul li a {
-	background: url('../img//blackBtnSprite3.png') no-repeat 37px 0px;
+	background: url('../img/blackBtnSprite3.png') no-repeat 37px 0px;
 	padding:5px 8px;
+}
+#mainNav ul li a:hover {
+	background: url('../img/blackBtnSprite3.png') no-repeat 37px -24px;
+}
+.searchForm {
+	float:left;
+}
+.blackBtnStart {
+	background: url('../img/blackBtnSprite2.png') no-repeat 37px 0px;
+	height: 23px;
+	width: 120px;
+	margin: 2px 0 0 -51px;
+}
+.blackBtnEnd {
+	background: url('../img/blackBtnSprite2.png') repeat-x -16px 0px;
+	height: 23px;
+	width: 27px;
+	float: left;
+}
+.searchForm input {
+	margin-left: 46px;
+	background: url('../img/generalSprite.png') no-repeat -447px -41px;
+	width: 143px;
+	height: 23px;
+	border-width:0px;
+	border-style: none;
+
 }
