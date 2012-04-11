@@ -5,7 +5,10 @@ body {
 	background: #a4a9b3 url('../img/bg.png') repeat-y center;
 }
 .wrap {
-	/*width: 930px;*/
+	margin: 0 auto;
+}
+.navWrapper, .contentWrap, footer {
+	width:960px;
 	margin: 0 auto;
 }
 /*
@@ -60,9 +63,8 @@ header h4 {
 ************************
 */
 .navWrapper{
-	margin: 0 auto;
 	height:38px;
-	width:930px;
+	width:960px;
 	padding-top: 5px;
 }
 .wrap > nav {
@@ -85,6 +87,7 @@ header h4 {
 	width:173px;
 	height:27px;
 	float: left;
+	margin-left: 50px;
 	}
 .scaleBar > div {
 	float: left;
@@ -185,23 +188,158 @@ header h4 {
 	float:left;
 }
 .blackBtnStart {
-	background: url('../img/blackBtnSprite2.png') no-repeat 37px 0px;
+	/*background: url('../img/blackBtnSprite2.png') no-repeat 37px 0px;
 	height: 23px;
 	width: 120px;
-	margin: 2px 0 0 -51px;
+	margin: 2px 0 0 -51px;*/
 }
 .blackBtnEnd {
 	background: url('../img/blackBtnSprite2.png') repeat-x -16px 0px;
 	height: 23px;
-	width: 27px;
+	width: 169px;/*27*/
+	margin: 2px;
+}
+.searchForm input[type="search"] {
+	background: url('../img/generalSprite.png') no-repeat -447px -41px;
+	width: 141px;
+	height: 20px;
+	border:none;
+	float: left;
+	-webkit-appearance: none;
+	-webkit-box-sizing: content-box;
+}
+.searchForm input[type="submit"] {
+	float: left;
+	background: url('../img/generalSprite.png') no-repeat -430px -44px;
+	width: 12px;
+	height: 12px;
+	border: none;
+	text-indent: -9999px;
+	margin: 5px 5px 5px 9px;
+	cursor: pointer;
+}
+/*
+************************
+* =contentWrap
+************************
+*/
+.contentWrap {
+	width:960px;
+}
+/*
+************************
+* =ads
+************************
+*/
+.ads{
+	margin-top: 50px;
+}
+.ads ul li {
+	background: url('../img/generalSprite.png') no-repeat 0 -61px;
+	width: 288px;
+	height: 88px;
+	text-indent: -9999px;
+	float: left;
+	margin-right: 30px;
+	position: relative;
+	/*cursor: pointer;*/
+	margin-bottom: 65px;
+}
+.ads ul li:last-child {
+	margin-right: 0px;
+}
+.ads ul li a {
+	position: absolute;
+	top:0px;
+	left: 0px;
+	width: 288px;
+	height: 88px;
+}
+.workList ul li {
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 80px;
+	width: 290px;
+	height: 344px;
+}
+.workList ul li img {
+	margin-bottom: 15px;
+}
+.workList ul li span {
+	float: left;
+	margin: 0 auto;
+	background: url('../img/itemBtnBg.png') repeat-x 0 0;
+	height: 21px;
+	color: #505257;
+	letter-spacing: 0.5px;
+	font-family: Arial;
+	font-size:11px;
+	padding: 4px 0;
+}
+.workList ul li span:last-child {
+	background: url('../img/itemBtnRight.png') no-repeat 0 0;
+	width: 10px;
+	float: left;
+	display:inline;
+}
+.workList ul li span:first-of-type {
+	background: url('../img/itemBtnLeft.png') no-repeat 0 0;
+	width: 10px;
+	float: left;
+	display:inline;
+}
+/*
+************************
+* =bottom nav
+************************
+*/
+.contentWrap nav {
+	clear: both;
+	margin: 0 auto;
+	width: 960px;
+	background: url('../img/generalSprite.png') no-repeat -436px 0;
+	width: 164px;
+	height: 37px;
+}
+.contentWrap nav ul li {
+	margin: 9px 0px;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+.contentWrap nav ul li:first-child {
+	background: url('../img/generalSprite.png') no-repeat -291px -61px;
+	width: 50px;
+	height: 22px;
+	margin-right:5px;
+	float: left;
+	margin-left: 30px;
+}
+.contentWrap nav ul li:last-child {
+	background: url('../img/generalSprite.png') no-repeat -345px -61px;
+	width: 50px;
+	height: 22px;
 	float: left;
 }
-.searchForm input {
-	margin-left: 46px;
-	background: url('../img/generalSprite.png') no-repeat -447px -41px;
-	width: 143px;
-	height: 23px;
-	border-width:0px;
-	border-style: none;
-
+/*
+************************
+* =footer
+************************
+*/
+footer {
+	background: #d4d9e0  url('../img/footerTopBg.png') repeat-x top center;
+	width: 100%;
+}
+footer div {
+	width:960px;
+	margin: 0 auto;	
+	padding-top:30px;
+}
+footer div article:first-child {
+	width: 610px;
+	margin-right:30px;
+	float: left;
+}
+footer div article {
+	width:290px;
+	float: left;
 }
