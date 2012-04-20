@@ -62,6 +62,11 @@ header h4 {
 * =mainNav
 ************************
 */
+#mainNav {
+	-webkit-box-shadow: 0px 3px 22px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 3px 22px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 3px 22px rgba(50, 50, 50, 0.75);
+}
 .navWrapper{
 	height:38px;
 	width:960px;
@@ -225,6 +230,30 @@ header h4 {
 */
 .contentWrap {
 	width:960px;
+	position:relative;
+}
+/*
+************************
+* =spotlights
+************************
+*/
+#spotlights
+{
+	position: absolute;
+	top:-51px;
+	left:-16px;
+	width:960px;
+}
+#spotlights div
+{
+	background: url('../img/spotLight2.png') ;
+	width:320px;
+	height:300px;
+	float: left;
+}
+#spotlights ul li
+{
+
 }
 /*
 ************************
@@ -288,6 +317,14 @@ header h4 {
 	float: left;
 	display:inline;
 }
+.workList ul li div:first-of-type {
+	margin: 0 auto;
+	overflow-x: auto;
+    overflow-y: hidden;
+	height: 21px;
+	white-space: nowrap;
+	width:132px;
+}
 /*
 ************************
 * =bottom nav
@@ -333,6 +370,7 @@ footer div {
 	width:960px;
 	margin: 0 auto;	
 	padding-top:30px;
+	text-shadow:#f2f3f4 0px 1px 2px;
 }
 footer div article:first-child {
 	width: 610px;
@@ -342,4 +380,63 @@ footer div article:first-child {
 footer div article {
 	width:290px;
 	float: left;
+	color:#343e49;
+}
+footer div article h2 {
+	font-size:14px;
+	line-height: 18px;
+	margin: 0px 0 25px 0;
+	text-transform:uppercase;
+}
+footer div article p {
+	font-size:11px;
+	line-height: 18px;
+
+}
+.border
+{
+	border-bottom:#a8adb9 1px solid;
+	width:100%;
+	clear: both;
+	-webkit-box-shadow: 0px 1px 0px #eff1f4;
+	-moz-box-shadow:    0px 1px 0px #eff1f4;
+	box-shadow:         0px 1px 0px #eff1f4;
+}
+.copyright {
+	margin-top:20px;
+	padding:0;
+	overflow: hidden;
+	color: #8c919b !important;
+	font-size:11px;
+}
+.copyright a {
+	color: #8c919b !important;
+}
+.copyright ul li {
+	margin: 0 7.5px;
+	float: left;
+	display: block;
+	overflow: hidden;	
+}
+.copyright ul li:before {
+	content:'|';
+	margin-right:7.5px;
+}
+.copyright ul li:first-child {
+	margin:0px !important;
+	padding:0px;
+}
+.copyright ul li:first-child:before {
+	content:'';
+	margin:0px !important;
+}
+.copyright ul li:last-child {
+	margin:0px !important;
+}
+.copyright span {
+	float:right;
+}
+.copyright span:before {
+	content:'©';
+	margin-right:4px;
 }
