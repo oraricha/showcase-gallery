@@ -325,6 +325,25 @@ header h4 {
 	white-space: nowrap;
 	width:132px;
 }
+a.work-button {
+	display: inline-block;
+	position: relative;
+	width: auto;
+	background: url('../img/pazBtn.png') no-repeat 0 0;
+	padding: 0;
+	line-height: 21px;
+	padding-right: 0px;
+}
+a.work-button span {
+	display: block !important;
+	width: 100% !important;
+	float: none !important;
+	background: url('../img/pazBtn.png') no-repeat -11px -21px !important;
+	padding: 0 9px 0 15px !important;
+	margin: 0 !important;
+	position: relative !important;
+	height: auto !important;
+}
 /*
 ************************
 * =bottom nav
